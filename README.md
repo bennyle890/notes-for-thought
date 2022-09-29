@@ -1,5 +1,7 @@
 # Notes for Thoughts!
 
+Click this [link](https://notes-for-thought.herokuapp.com/) to go to my deployed Heroku site!
+
 ## Description
 
 This is a note taking app. You will be able to create your own notes with a header and section for you to write in. 
