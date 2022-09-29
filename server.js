@@ -21,7 +21,7 @@ app.get('/notes', function(req, res) {
 });
 
 app.get('/api/notes', function(req, res) {
-    fs.readFile('db/db.json', 'utf8', (err, data) => {
+    fs.readFile('Develop/db/db.json', 'utf8', (err, data) => {
         if (err) {
             console.log(err);
         }
@@ -34,7 +34,7 @@ app.post('/api/notes', function(req, res) {
     const newNote = req.body;
     req.body.id = Math.floor(Math.random() * 10000) + 1;
     notes.push(newNote);
-    fs.writeFile('db/db.json', JSON.stringify(notes, null, 2), err => {
+    fs.writeFile('Develop/db/db.json', JSON.stringify(notes, null, 2), err => {
         if(err) {
             console.log(err);
         }
