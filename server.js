@@ -42,10 +42,6 @@ app.post('/api/notes', function(req, res) {
     res.json(newNote);
 });
 
-
-
-
-
 app.listen(PORT, () => {
     console.log(`Notes for Thought now live on port ${PORT}!`);
 });
